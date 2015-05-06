@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emergency_institution">
+        <item>Police</item>
+        <item>Fire Service</item>
+        <item>Ambulance</item>
+
+    </string-array>
+
+    <string-array name="emergency_number">
+        <item>191</item>
+        <item>192</item>
+        <item>199</item>
+    </string-array>
+
+</resources>

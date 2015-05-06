@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/cyan">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hi, "
+        android:id="@+id/textView6"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/twi_name_inform"
+        android:id="@+id/textView"
+        android:textSize="@dimen/medium"
+        android:layout_marginTop="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/twi_name_request"
+        android:id="@+id/textView2"
+        android:textSize="@dimen/medium"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enter your date"
+        android:textColor="@color/white"
+        android:onClick="showDatePickerDialog"
+        android:id="@+id/button"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/to_do"
+        android:id="@+id/textView3"
+        android:textSize="@dimen/medium"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+    android:layout_width="wrap_content"
+    android:layout_marginBottom="23dp"
+    android:layout_above="@+id/button"
+    android:layout_alignLeft="@+id/textView3"
+    android:layout_alignStart="@+id/textView3">
+
+
+
+    <RadioButton android:id="@+id/radioFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="female"
+        android:textColor="@color/white"
+        android:onClick="onRadioButtonClicked"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:checked="false"
+        android:layout_alignTop="@+id/radioMale"
+        android:layout_toRightOf="@+id/radioMale"
+        android:layout_toEndOf="@+id/radioMale" />
+
+    <RadioButton android:id="@+id/radioMale"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="male"
+        android:textColor="@color/white"
+        android:onClick="onRadioButtonClicked"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="42dp" />
+
+    </RadioGroup>
+
+
+
+
+</RelativeLayout>
